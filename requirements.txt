@@ -4,3 +4,4 @@ langchain
 langchain-ollama
 langchain-chroma
 chromadb
+langchain-community
