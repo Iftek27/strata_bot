@@ -1,0 +1,6 @@
+flask
+flask-cors
+langchain
+langchain-ollama
+langchain-chroma
+chromadb

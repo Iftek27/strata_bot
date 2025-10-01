@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Strata Chat Bot</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="/static/logo.png" />
+</head>
+<body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="border-b bg-white shadow-sm">
+    <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="/static/logo.png" alt="Bot Logo" class="h-8 w-8 rounded">
+        <h1 class="text-lg font-semibold text-indigo-700">Strata Chat Bot</h1>
+      </div>
+      <a href="/static/Unit Titles (Management) Act 2011.pdf" target="_blank" 
+         class="text-sm text-indigo-600 hover:underline">
+         📄 Unit Titles (Management) Act 2011 (PDF)
+      </a>
+    </div>
+  </header>
+
+  <!-- Chat -->
+  <main class="flex-1 flex flex-col max-w-4xl mx-auto w-full px-4 py-4">
+    <div id="chat-box" class="flex-1 overflow-y-auto space-y-4 p-2">
+      <!-- Welcome -->
+      <div class="flex items-start gap-2">
+        <img src="/static/logo.png" alt="Bot Logo" class="h-8 w-8 rounded">
+        <div class="bg-indigo-50 px-3 py-2 rounded-2xl text-sm">
+          👋 Hi! I’m the <b>Strata Chat Bot</b>. Ask me about ACT strata laws under the Unit Titles (Management) Act 2011.
+        </div>
+      </div>
+    </div>
+
+    <!-- Input -->
+    <form id="chat-form" class="mt-3 flex gap-2">
+      <textarea id="user-input" rows="2" placeholder="Type your question..."
+        class="flex-1 resize-none rounded-lg border p-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+      <button type="submit"
+        class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 rounded-lg text-sm">Send</button>
+    </form>
+  </main>
+
+  <!-- Footer Disclaimer -->
+  <footer class="bg-gray-100 py-2 text-center text-xs text-gray-600 border-t">
+    ⚠ This app provides general guidance only and should not be treated as legal advice.
+  </footer>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
